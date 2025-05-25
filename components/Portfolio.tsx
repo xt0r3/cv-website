@@ -386,7 +386,7 @@ const Portfolio = () => {
           <div className="text-center">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Connect</h3>
             <a
-              href="https://linkedin.com/in/kornel-gyorgy-szabo"
+              href="https://www.linkedin.com/in/korn%C3%A9l-gy%C3%B6rgy-szab%C3%B3-b780b8223"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
