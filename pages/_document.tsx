@@ -14,20 +14,14 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Dr. Alex Morgan - Quantitative Researcher" />
         <meta property="og:description" content="Senior Quantitative Researcher & Data Scientist specializing in statistical modeling and machine learning applications." />
-        <meta property="og:image" content="/api/placeholder/1200/630" />
         
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="Dr. Alex Morgan - Quantitative Researcher" />
         <meta property="twitter:description" content="Senior Quantitative Researcher & Data Scientist specializing in statistical modeling and machine learning applications." />
-        <meta property="twitter:image" content="/api/placeholder/1200/630" />
         
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
         
         {/* Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,9 +34,6 @@ export default function Document() {
         {/* Theme color */}
         <meta name="theme-color" content="#3B82F6" />
         <meta name="msapplication-TileColor" content="#3B82F6" />
-        
-        {/* Preload critical resources */}
-        <link rel="preload" href="/api/placeholder/48/48" as="image" />
       </Head>
       <body className="antialiased">
         <Main />

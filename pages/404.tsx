@@ -11,11 +11,9 @@ const Custom404: NextPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <Link href="/" className="flex items-center space-x-4">
-              <img
-                className="h-12 w-12 rounded-full border-2 border-blue-500"
-                src="/api/placeholder/48/48"
-                alt="Profile"
-              />
+              <div className="h-12 w-12 rounded-full border-2 border-blue-500 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg">
+                AM
+              </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900 dark:text-white">Dr. Alex Morgan</h1>
                 <p className="text-sm text-gray-600 dark:text-gray-300">Quantitative Researcher</p>

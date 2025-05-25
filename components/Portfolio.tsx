@@ -158,7 +158,7 @@ const Portfolio = () => {
         technologies: ["Python", "Kafka", "Redis", "TensorFlow"],
         github: "github.com/alexmorgan/market-anomaly",
         demo: "demo.alexmorgan.dev/anomaly",
-        image: "/api/placeholder/400/250"
+        gradient: "from-blue-500 to-cyan-500"
       },
       {
         id: 2,
@@ -167,7 +167,7 @@ const Portfolio = () => {
         technologies: ["PyTorch", "FastAPI", "React", "PostgreSQL"],
         github: "github.com/alexmorgan/clinical-ai",
         demo: "demo.alexmorgan.dev/clinical",
-        image: "/api/placeholder/400/250"
+        gradient: "from-green-500 to-emerald-500"
       },
       {
         id: 3,
@@ -176,7 +176,7 @@ const Portfolio = () => {
         technologies: ["Python", "Streamlit", "Plotly", "CoinGecko API"],
         github: "github.com/alexmorgan/crypto-optimizer",
         demo: "demo.alexmorgan.dev/crypto",
-        image: "/api/placeholder/400/250"
+        gradient: "from-purple-500 to-pink-500"
       }
     ]
   };
@@ -436,13 +436,15 @@ const Portfolio = () => {
           whileHover={{ y: -5 }}
           className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
         >
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-48 object-cover"
-          />
+          <div className={`w-full h-48 bg-gradient-to-br ${project.gradient} flex items-center justify-center`}>
+            <div className="text-white text-center p-6">
+              <div className="text-4xl mb-2">
+                {project.id === 1 ? '📈' : project.id === 2 ? '🏥' : '₿'}
+              </div>
+              <h4 className="font-bold text-lg">{project.title}</h4>
+            </div>
+          </div>
           <div className="p-6">
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{project.title}</h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm">{project.description}</p>
             
             <div className="flex flex-wrap gap-1 mb-4">
@@ -561,11 +563,9 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-4">
-              <img
-                className="h-12 w-12 rounded-full border-2 border-blue-500"
-                src="/api/placeholder/48/48"
-                alt="Profile"
-              />
+              <div className="h-12 w-12 rounded-full border-2 border-blue-500 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg">
+                AM
+              </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900 dark:text-white">{cvData.name}</h1>
                 <p className="text-sm text-gray-600 dark:text-gray-300">{cvData.title}</p>
